@@ -1,5 +1,6 @@
 <?php
-	echo 'hello'.'</br>';
+	echo 'hello';
+	echo '</br>';
 	echo "xiaomi";
 
 
