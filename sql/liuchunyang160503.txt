@@ -1,0 +1,29 @@
+
+Create Table
+
+CREATE TABLE `mess` (
+  `id` tinyint(4) NOT NULL AUTO_INCREMENT,
+  `title` varchar(20) NOT NULL DEFAULT '' COMMENT '要发表的标题',
+  `concent` varchar(1000) NOT NULL DEFAULT '' COMMENT '要发表的内容',
+  `telephone` varchar(20) NOT NULL DEFAULT '' COMMENT '电话号码',
+  `role` tinyint(2) NOT NULL DEFAULT '1' COMMENT '权限：1管理员，2普通用户',
+  `create_time` time NOT NULL COMMENT '发表时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8
+
+Create Table
+
+CREATE TABLE `usermessage` (
+  `use_id` tinyint(4) NOT NULL AUTO_INCREMENT COMMENT '用户id',
+  `emial` varchar(50) NOT NULL DEFAULT '' COMMENT '用户名',
+  `password` varchar(50) NOT NULL DEFAULT '' COMMENT '用户密码',
+  `username` varchar(20) NOT NULL DEFAULT '' COMMENT '用户名',
+  `sex` tinyint(4) NOT NULL COMMENT '性别 0 保密 1 男 2 女',
+  `address` varchar(20) NOT NULL DEFAULT '' COMMENT '地址',
+  `school` varchar(20) NOT NULL DEFAULT '' COMMENT '学校',
+  `idcard` varchar(20) NOT NULL DEFAULT '' COMMENT '身份证号',
+  `create_time` int(11) NOT NULL COMMENT '创建时间',
+  `update_time` int(11) NOT NULL COMMENT '修改时间',
+  PRIMARY KEY (`use_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8
+

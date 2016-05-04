@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>列表</title>
+	<style type="text/css">
+	.title{width:500px;height:20px;background:#ff0;margin:0 auto;}
+    .concent{width:500px;height:200px;background:#0f0;margin:0 auto;margin-top:10px;}
+    .telephone{width:500px;height:20px;background:#0ff;margin:0 auto;margin-top:10px;}
+    .edit{width:500px;height:20px;background:#0f0;margin:0 auto;margin-top:150px;}
+	</style>
+	
+</head>
+<body>
+      	<div class='title'><?php echo $result['title']?><div/>
+		<div class='concent'><?php echo $result['concent']?>
+		<div/>
+		<div class='edit'>
+			<a href='index.php?class=liuyan&method=edit&id=<?php echo $result['id']?>'>编辑</a>
+			<a href='index.php?class=liuyan&method=delusre&id=<?php echo $result['id']?>'>删除</a>
+		<div/>
+		<div class='telephone'><?php echo $result['telephone']?><div/>
+		<hr/>
+</body>
+</html>
