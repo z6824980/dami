@@ -1,8 +1,9 @@
 <?php
-class ServerController extends Controller{
-	function __construct(){
-
+	class ServerController
+	{
+		function __construct(){
 	}
+
 	function index(){
 		$lists = M('Server')->select('select * from zt_server');
 		include "./admin/view/server/index.html";
@@ -32,9 +33,4 @@ class ServerController extends Controller{
 	}
 
 }
-
-
-
-
-
 ?>
