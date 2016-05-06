@@ -29,6 +29,7 @@ class FriendlinkController extends Controller{
 	function delete1(){
 		$id= gv('id');
 		M('Friendlink')->delete('zt_friend_link',"id = $id");
+		redirect('index.php?m=admin&c=friendlink&a=index');
 	}
 }	
 
