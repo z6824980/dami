@@ -5,9 +5,8 @@ class Model
 	public $mysqli;
 	public function __construct()
 	{
-	$this->mysqli = new Mysqli('localhost','root','','messages');
+	$this->mysqli = new Mysqli('localhost','root','','project');
 	$this->mysqli->query('set names utf8');
-
 	}
 	public function query($sql){
 		return $this->mysqli->query($sql);
