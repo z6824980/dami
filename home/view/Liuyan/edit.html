@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form action="index.php?class=liuyan&method=handleedit" method="post">
+
+	标题：
+	<input type="text" name="title" value = "<?php echo $list['title'] ?>"></input><br/>
+	
+	内容：
+	<textarea cols="30" rows="5" name="concent"><?php echo $list['concent'] ?></textarea><br/>
+	电话：<input type="text" name="telephone" value = "<?php echo $list['telephone'] ?>"></input><br/>
+	<input type="hidden" name="id" value="<?php echo $list['id'] ?>"></input>
+	<input type='submit' name= 'sub' value="发表"></input>
+</form>
+
+</body>
+</html>
