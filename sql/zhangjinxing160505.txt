@@ -1,0 +1,6 @@
+CREATE TABLE `zt_server` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL COMMENT '服务名',
+  `link` varchar(100) NOT NULL COMMENT '链接',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8

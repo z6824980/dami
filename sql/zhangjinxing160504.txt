@@ -1,0 +1,8 @@
+CREATE TABLE `zt_friend_link` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL DEFAULT '' COMMENT '链接名称',
+  `link` varchar(50) NOT NULL DEFAULT '' COMMENT '链接地址',
+  `sort` int(11) NOT NULL DEFAULT '0' COMMENT '排序',
+  `is_del` tinyint(2) NOT NULL DEFAULT '0' COMMENT '是否删除',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
