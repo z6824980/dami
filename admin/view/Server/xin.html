@@ -1,11 +1,11 @@
 <?php include "./admin/view/public/header.html"; ?>
 <!-- *********内容************* -->
 <div style="width:500px">
-    <form class="form-horizontal" action="index.php?m=admin&c=friendlink&a=update1&id=<?php echo $id?>" method="post">
+    <form class="form-horizontal" action="index.php?m=admin&c=server&a=update1&id=<?php echo $id?>" method="post">
 	  <div class="form-group">
-	    <label for="inputEmail3" class="col-sm-2 control-label">名称：</label>
+	    <label for="inputEmail3" class="col-sm-2 control-label">服务名：</label>
 	    <div class="col-sm-10">
-	      <input type="text" class="form-control" id="inputEmail3" placeholder="名称" name="name" value="<?php echo $name?>">
+	      <input type="text" class="form-control" id="inputEmail3" placeholder="服务名" name="name" value="<?php echo $name?>">
 	    </div>
 	  </div>
 	  <div class="form-group">
@@ -14,12 +14,18 @@
 	      <input type="text" class="form-control" id="inputPassword3" placeholder="链接" name="link" value="<?php echo $link?>">
 	    </div>
 	  </div>
+	  <!-- <div class="form-group">
+	    <label for="inputPassword3" class="col-sm-2 control-label">排序：</label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control" id="inputPassword3" placeholder="排序" name="sort">
+	    </div>
+	  </div>
 	  <div class="form-group">
 	    <label for="inputPassword3" class="col-sm-2 control-label">下架：</label>
 	    <div class="col-sm-10">
-	      <input type="text" class="form-control" id="inputPassword3" placeholder="下架" name="is_del" value="<?php echo $is_del?>">
+	      <input type="text" class="form-control" id="inputPassword3" placeholder="下架" name="is_del">
 	    </div>
-	  </div>
+	  </div> -->
 	  <div class="form-group">
 	    <div class="col-sm-offset-2 col-sm-10">
 	      <button type="submit" class="btn btn-default">提交</button>

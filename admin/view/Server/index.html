@@ -2,16 +2,14 @@
 <!-- *********内容************* -->
 <div style="width:500px">
 	<div>
-		<a class="btn btn-default" href="index.php?m=admin&c=friendlink&a=bar">增加</a>
+		<a class="btn btn-default" href="index.php?m=admin&c=server&a=server">增加</a>
 	</div>
 	<div style="margin-top:10px">
 		<table class="table">
 	    	<tr>
 	    		<td>Id</td>
-	    		<td>名称</td>
+	    		<td>服务名</td>
 	    		<td>链接</td>
-	    		<td>排序</td>
-	    		<td>下架</td>
 	    		<td>操作</td>
 	    	</tr>
 	    	<?php foreach($lists as $key=>$value){ ?>
@@ -19,12 +17,10 @@
 	    		<td><?php echo $value['id'] ?></td>
 	    		<td><?php echo $value['name'] ?></td>
 	    		<td><?php echo $value['link'] ?></td>
-	    		<td><?php echo $value['sort'] ?></td>
-	    		<td><?php echo $value['is_del'] ?></td>
 	    		<td>
-	    			<a href="index.php?m=admin&c=friendlink&a=delete1&id=<?php echo $value['id'];?>">删除</a>
-	    			<a href="index.php?m=admin&c=friendlink&a=xin&id=<?php echo 
-	    				$value['id'];?>&name=<?php echo $value['name']?>&link=<?php echo $value['link']?>&is_del=<?php echo $value['is_del']?>">更新</a>
+	    			<a href="index.php?m=admin&c=server&a=delete1&id=<?php echo $value['id'];?>">删除</a>
+	    			<a href="index.php?m=admin&c=server&a=xin&id=<?php echo 
+	    				$value['id'];?>&name=<?php echo $value['name']?>&link=<?php echo $value['link']?>">更新</a>
 	    		</td>
 	    	</tr>
 	    	<?php } ?>

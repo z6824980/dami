@@ -18,6 +18,7 @@ class FriendlinkController extends Controller{
 		$name = gv('name');
 		$link = gv('link');
 		$id = gv('id');
+		$is_del = gv('is_del');
 		include "./admin/view/friendlink/xin.html";
 	}
 	function update1(){

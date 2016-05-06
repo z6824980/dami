@@ -1,14 +1,25 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<title>server</title>
-	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-</head>
-<body>
-	<form action='index.php?m=admin&c=server&a=insert1' method='post'>
-		服务名:<input type="text" name='name'></br>
-		 链接:<input type="text" name='link'></br>
-		<input type='submit' name='sub'>
+<?php include "./admin/view/public/header.html"; ?>
+<!-- *********内容************* -->
+<div style="width:500px">
+    <form class="form-horizontal" action="index.php?m=admin&c=server&a=insert1" method="post">
+	  <div class="form-group">
+	    <label for="inputEmail3" class="col-sm-2 control-label">服务名：</label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control" id="inputEmail3" placeholder="服务名" name="name">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label for="inputPassword3" class="col-sm-2 control-label">链接：</label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control" id="inputPassword3" placeholder="链接" name="link">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <div class="col-sm-offset-2 col-sm-10">
+	      <button type="submit" class="btn btn-default">提交</button>
+	    </div>
+	  </div>
 	</form>
-</body>
-</html>
+</div>
+<!-- *********内容************* -->
+<?php include "./admin/view/public/footer.html"; ?>   

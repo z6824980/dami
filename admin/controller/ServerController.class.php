@@ -1,5 +1,5 @@
 <?php
-	class ServerController
+	class ServerController extends Controller
 	{
 		function __construct(){
 	}
